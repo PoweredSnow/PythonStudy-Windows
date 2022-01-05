@@ -14,7 +14,7 @@ class Settings:
         self.difficulty = 0
         self.difficulty_option = self.difficulty_list[0]
         # 子弹设置
-        self.bullet_width = 3000
+        self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = (60, 60, 60)
         self.bullet_allowed = 3
@@ -49,7 +49,7 @@ class Settings:
         """初始化随游戏进行而变化的设置。"""
         difficulty = self.difficulty % 3
         self.ship_speed = 1.5
-        self.bullet_speed = 3.0
+        self.bullet_speed = 1.0
         self.alien_speed = self.alien_speeds[difficulty]
         # fleet_direction 为 1 表示向右移，为 -1 表示向左移。
         self.fleet_direction = 1
