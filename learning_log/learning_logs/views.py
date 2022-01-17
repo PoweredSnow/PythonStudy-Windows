@@ -33,6 +33,6 @@ def new_topic(request):
             form.save()
             return redirect('learning_logs:topics')
 
-        # 显示空表单或指出表单数据无效。
-        context = {'form': form}
-        return render(request, 'learning_logs/new_topic.html', context)
+    # 显示空表单或指出表单数据无效。
+    context = {'form': form}
+    return render(request, 'learning_logs/new_topic.html', context)
