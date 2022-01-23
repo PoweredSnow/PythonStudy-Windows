@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'learning_logs',
     'users',
 
+    # 第三方应用程序
+    'bootstrap4',
+
     # 默认添加的应用程序
     'django.contrib.admin',
     'django.contrib.auth',
